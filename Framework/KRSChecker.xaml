@@ -8,7 +8,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>992,853</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1493,1179</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ProcessTransaction_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="50">
@@ -119,22 +119,22 @@
       <AssemblyReference>UiPath.CV.Activities</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:Annotation.AnnotationText="Invoke major steps of the business process, which are usually implemented by multiple subworkflows.&#xA;&#xA;If a BusinessRuleException is thrown, the number is skipped. " DisplayName="KRSChecker" sap:VirtualizedContainerService.HintSize="500,542" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap2010:Annotation.AnnotationText="Invoke major steps of the business process, which are usually implemented by multiple subworkflows.&#xA;&#xA;If a BusinessRuleException is thrown, the number is skipped. " DisplayName="KRSChecker" sap:VirtualizedContainerService.HintSize="496,538" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="438,359" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="434,351" sap2010:WorkflowViewState.IdRef="TryCatch_1">
       <TryCatch.Try>
-        <uix:NApplicationCard sap2010:Annotation.AnnotationText="Check if the krs number exists, if so - get the values&#xA;" AttachMode="SingleWindow" CloseMode="Never" DisplayName="Check krs number" sap:VirtualizedContainerService.HintSize="1050,2742" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InUiElement="[in_Browser]" InteractionMode="DebuggerApi" OpenMode="Never" ScopeGuid="ba80cf8f-9a60-49fe-ba32-3677daab2dcd" Version="V2" WindowResize="Maximize">
+        <uix:NApplicationCard sap2010:Annotation.AnnotationText="Check if the krs number exists, if so - get the values&#xA;" AttachMode="SingleWindow" CloseMode="Never" DisplayName="Check krs number" sap:VirtualizedContainerService.HintSize="1050,3237" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InUiElement="[in_Browser]" InteractionMode="DebuggerApi" OpenMode="Never" ScopeGuid="ba80cf8f-9a60-49fe-ba32-3677daab2dcd" Version="V2" WindowResize="Maximize">
           <uix:NApplicationCard.Body>
             <ActivityAction x:TypeArguments="x:Object">
               <ActivityAction.Argument>
                 <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
               </ActivityAction.Argument>
-              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1016,2563" sap2010:WorkflowViewState.IdRef="Sequence_2">
+              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1016,3055" sap2010:WorkflowViewState.IdRef="Sequence_2">
                 <Sequence.Variables>
                   <Variable x:TypeArguments="x:Boolean" Name="loaded" />
                 </Sequence.Variables>
@@ -143,25 +143,25 @@
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Krajowy Rejestr'" sap:VirtualizedContainerService.HintSize="954,157" sap2010:WorkflowViewState.IdRef="NClick_1" InteractionMode="DebuggerApi" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ba80cf8f-9a60-49fe-ba32-3677daab2dcd" Timeout="60" Version="V3">
+                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Krajowy Rejestr'" sap:VirtualizedContainerService.HintSize="954,158" sap2010:WorkflowViewState.IdRef="NClick_1" InteractionMode="DebuggerApi" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ba80cf8f-9a60-49fe-ba32-3677daab2dcd" Timeout="60" Version="V3">
                   <uix:NClick.Target>
                     <uix:TargetAnchorable BrowserURL="https://prs.ms.gov.pl/" DesignTimeRectangle="128, 566, 538, 325" DesignTimeScaleFactor="1" FriendlyName="'Krajowy Rejestr'" FullSelectorArgument="&lt;webctrl tabindex='0' tag='DIV' /&gt;" FuzzyAccuracy="0.9" FuzzySelectorArgument="&lt;webctrl tabindex='0' tag='DIV' type='' class='service-container p-p-4' aaname='' check:innerText='Krajowy Rejestr Sądowy&amp;#xD;&amp;#xA;Możliwość realizacji spraw z zakresu Krajowego Rejestru Sądowego, m.in.' /&gt;" Guid="c4125bff-c4a2-4c02-9c12-3e31d7828109" InformativeScreenshot="cc55dd78929afbcc6d5154741f000385.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Portal Rejestrów Sądowych' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Visible" WaitForReadyArgument="Complete" />
                   </uix:NClick.Target>
                 </uix:NClick>
-                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Wyszukiwarka KRS'" sap:VirtualizedContainerService.HintSize="954,157" sap2010:WorkflowViewState.IdRef="NClick_2" InteractionMode="DebuggerApi" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ba80cf8f-9a60-49fe-ba32-3677daab2dcd" Version="V3">
+                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Wyszukiwarka KRS'" sap:VirtualizedContainerService.HintSize="954,158" sap2010:WorkflowViewState.IdRef="NClick_2" InteractionMode="DebuggerApi" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ba80cf8f-9a60-49fe-ba32-3677daab2dcd" Version="V3">
                   <uix:NClick.Target>
                     <uix:TargetAnchorable BrowserURL="https://prs.ms.gov.pl/krs" DesignTimeRectangle="1247, 754, 544, 360" DesignTimeScaleFactor="1" FriendlyName="'nie wymaga'" FullSelectorArgument="&lt;webctrl idx='6' tabindex='0' tag='DIV' /&gt;" FuzzyAccuracy="0.9" FuzzySelectorArgument="&lt;webctrl type='' tabindex='0' tag='DIV' class='service-container p-p-4' aaname='' check:innerText='*&amp;#xD;&amp;#xA;Wyszukiwarka KRS&amp;#xD;&amp;#xA;Każdy może wyszukać podmiot w KRS i uzyskać informację' /&gt;" Guid="551a8293-8339-41f8-899e-49beeac213be" InformativeScreenshot="8c472ef6f5f2126da8d7a78f179c20be.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Portal Rejestrów Sądowych' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive" />
                   </uix:NClick.Target>
                 </uix:NClick>
-                <ui:InterruptibleDoWhile CurrentIndex="{x:Null}" sap2010:Annotation.AnnotationText="Refreshes the page every 60 seconds until it loads." Condition="[not loaded]" DisplayName="Help the page load" sap:VirtualizedContainerService.HintSize="954,669" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_1">
+                <ui:InterruptibleDoWhile CurrentIndex="{x:Null}" sap2010:Annotation.AnnotationText="Refreshes the page every 60 seconds until it loads." Condition="[not loaded]" DisplayName="Help the page load" sap:VirtualizedContainerService.HintSize="954,673" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_1">
                   <ui:InterruptibleDoWhile.Body>
-                    <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="536,502" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                    <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="536,505" sap2010:WorkflowViewState.IdRef="Sequence_8">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                      <uix:NCheckState DisplayName="Check App State 'Wyszukiwarka KRS'" EnableIfExists="False" Exists="[loaded]" sap:VirtualizedContainerService.HintSize="494,414" sap2010:WorkflowViewState.IdRef="NCheckState_2" ScopeIdentifier="ba80cf8f-9a60-49fe-ba32-3677daab2dcd" Timeout="60" Version="V3">
+                      <uix:NCheckState DisplayName="Check App State 'Wyszukiwarka KRS'" EnableIfExists="False" Exists="[loaded]" sap:VirtualizedContainerService.HintSize="494,417" sap2010:WorkflowViewState.IdRef="NCheckState_2" ScopeIdentifier="ba80cf8f-9a60-49fe-ba32-3677daab2dcd" Timeout="60" Version="V3">
                         <uix:NCheckState.IfExists>
                           <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,105" sap2010:WorkflowViewState.IdRef="Sequence_6">
                             <sap:WorkflowViewStateService.ViewState>
@@ -172,13 +172,13 @@
                           </Sequence>
                         </uix:NCheckState.IfExists>
                         <uix:NCheckState.IfNotExists>
-                          <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,197" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                          <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,198" sap2010:WorkflowViewState.IdRef="Sequence_7">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
-                            <uix:NNavigateBrowser Action="Refresh" DisplayName="Navigate Browser - Refresh" sap:VirtualizedContainerService.HintSize="388,82" sap2010:WorkflowViewState.IdRef="NNavigateBrowser_1" Version="V3" />
+                            <uix:NNavigateBrowser Action="Refresh" DisplayName="Navigate Browser - Refresh" sap:VirtualizedContainerService.HintSize="388,83" sap2010:WorkflowViewState.IdRef="NNavigateBrowser_1" Version="V3" />
                           </Sequence>
                         </uix:NCheckState.IfNotExists>
                         <uix:NCheckState.Target>
@@ -193,7 +193,7 @@
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
                 </ui:InterruptibleDoWhile>
-                <uix:NCheck Action="Check" DisplayName="Check 'Przedsiebiorcy'" sap:VirtualizedContainerService.HintSize="954,157" sap2010:WorkflowViewState.IdRef="NCheck_1" ScopeIdentifier="ba80cf8f-9a60-49fe-ba32-3677daab2dcd" Version="V3">
+                <uix:NCheck Action="Check" DisplayName="Check 'Przedsiebiorcy'" sap:VirtualizedContainerService.HintSize="954,158" sap2010:WorkflowViewState.IdRef="NCheck_1" ScopeIdentifier="ba80cf8f-9a60-49fe-ba32-3677daab2dcd" Version="V3">
                   <uix:NCheck.Target>
                     <uix:TargetAnchorable BrowserURL="https://wyszukiwarka-krs.ms.gov.pl/" DesignTimeRectangle="198, 507, 97, 14" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'unchecked'" FullSelectorArgument="&lt;webctrl tag='LABEL' /&gt;" FuzzyAccuracy="0.8" FuzzySelectorArgument="&lt;webctrl tag='LABEL' type='' class='ng-star-inserted p-checkbox-label p-checkbox-label-focus' aaname='Przedsiębiorcy' check:innerText='Przedsiębiorcy' /&gt;" Guid="545aaf47-2a19-4f8d-b80e-9be9a9fe226e" InformativeScreenshot="2f0748a8d667c82b1613854867f86891.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Wyszukiwarka KRS' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
                       <uix:TargetAnchorable.Anchors>
@@ -204,7 +204,7 @@
                     </uix:TargetAnchorable>
                   </uix:NCheck.Target>
                 </uix:NCheck>
-                <uix:NSetText DisplayName="Set Text 'Numer KRS'" sap:VirtualizedContainerService.HintSize="954,162" sap2010:WorkflowViewState.IdRef="NSetText_1" ScopeIdentifier="ba80cf8f-9a60-49fe-ba32-3677daab2dcd" Text="[in_krsNumber]" Version="V3">
+                <uix:NSetText DisplayName="Set Text 'Numer KRS'" sap:VirtualizedContainerService.HintSize="954,163" sap2010:WorkflowViewState.IdRef="NSetText_1" ScopeIdentifier="ba80cf8f-9a60-49fe-ba32-3677daab2dcd" Text="[in_krsNumber]" Version="V3">
                   <uix:NSetText.Target>
                     <uix:TargetAnchorable BrowserURL="https://wyszukiwarka-krs.ms.gov.pl/" CvElementArea="168, 658, 548, 37" CvType="InputBox" DesignTimeRectangle="170, 660, 544, 34" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'INPUT 17380514'" FullSelectorArgument="&lt;webctrl id='17380514' tag='INPUT' /&gt;" FuzzyAccuracy="0.8" FuzzySelectorArgument="&lt;webctrl id='17380514' tag='INPUT' type='text' class='w-100 p-inputtext p-component ng-untouched ng-pristine ng-valid' aaname='Numer KRS' /&gt;" Guid="85cda594-d333-43e4-9d03-c45913f646d3" InformativeScreenshot="f77c20d94a5d9981620f0b4b08b7034e.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Wyszukiwarka KRS' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
                       <uix:TargetAnchorable.Anchors>
@@ -215,7 +215,7 @@
                     </uix:TargetAnchorable>
                   </uix:NSetText.Target>
                 </uix:NSetText>
-                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Wyszukaj'" sap:VirtualizedContainerService.HintSize="954,157" sap2010:WorkflowViewState.IdRef="NClick_3" InteractionMode="DebuggerApi" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ba80cf8f-9a60-49fe-ba32-3677daab2dcd" Version="V3">
+                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Wyszukaj'" sap:VirtualizedContainerService.HintSize="954,158" sap2010:WorkflowViewState.IdRef="NClick_3" InteractionMode="DebuggerApi" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ba80cf8f-9a60-49fe-ba32-3677daab2dcd" Version="V3">
                   <uix:NClick.Target>
                     <uix:TargetAnchorable BrowserURL="https://wyszukiwarka-krs.ms.gov.pl/" CvElementArea="1397, 472, 370, 34" CvTextArea="1551, 482, 62, 16" CvTextArgument="Wyszukaj" CvType="Button" DesignTimeRectangle="1416, 481, 334, 16" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Wyszukaj'" FullSelectorArgument="&lt;webctrl aaname='Wyszukaj' css-selector='body&amp;gt;app-root&amp;gt;ds-layout&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;main&amp;gt;ds-layout-content&amp;gt;app-wyszukiwarka-krs&amp;gt;div&amp;gt;div&amp;gt;ds-tab-view&amp;gt;div&amp;gt;div&amp;gt;app-wyszukaj-podmiot&amp;gt;div&amp;gt;div&amp;gt;ds-panel&amp;gt;p-panel&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;ds-button&amp;gt;p-button&amp;gt;button&amp;gt;span' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Wyszukaj' type='' tag='SPAN' class='p-button-label ng-star-inserted' check:innerText='Wyszukaj' /&gt;" Guid="82498291-4c8a-4d06-98bf-70a59adff798" InformativeScreenshot="92e3f9c894f06ac986a2283aaecec3d3.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Wyszukiwarka KRS' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
                       <uix:TargetAnchorable.Anchors>
@@ -226,16 +226,16 @@
                     </uix:TargetAnchorable>
                   </uix:NClick.Target>
                 </uix:NClick>
-                <uix:NCheckState DisplayName="Check if found" sap:VirtualizedContainerService.HintSize="954,525" sap2010:WorkflowViewState.IdRef="NCheckState_1" Mode="WaitDisappear" ScopeIdentifier="ba80cf8f-9a60-49fe-ba32-3677daab2dcd" Timeout="1" Version="V3">
+                <uix:NCheckState DisplayName="Check if found" sap:VirtualizedContainerService.HintSize="954,529" sap2010:WorkflowViewState.IdRef="NCheckState_1" Mode="WaitDisappear" ScopeIdentifier="ba80cf8f-9a60-49fe-ba32-3677daab2dcd" Timeout="1" Version="V3">
                   <uix:NCheckState.IfExists>
-                    <Sequence DisplayName="Target disappears" sap:VirtualizedContainerService.HintSize="450,308" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                    <Sequence DisplayName="Target disappears" sap:VirtualizedContainerService.HintSize="450,310" sap2010:WorkflowViewState.IdRef="Sequence_3">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                           <x:Boolean x:Key="IsPinned">False</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                      <uix:NClick ActivateBefore="True" ClickType="Double" DisplayName="Click Wyszukany numer'" sap:VirtualizedContainerService.HintSize="388,193" sap2010:WorkflowViewState.IdRef="NClick_4" InteractionMode="DebuggerApi" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ba80cf8f-9a60-49fe-ba32-3677daab2dcd" Version="V3">
+                      <uix:NClick ActivateBefore="True" ClickType="Double" DisplayName="Click Wyszukany numer'" sap:VirtualizedContainerService.HintSize="388,195" sap2010:WorkflowViewState.IdRef="NClick_4" InteractionMode="DebuggerApi" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ba80cf8f-9a60-49fe-ba32-3677daab2dcd" Version="V3">
                         <uix:NClick.Target>
                           <uix:TargetAnchorable BrowserURL="https://wyszukiwarka-krs.ms.gov.pl/" CvTextArea="167, 858, 77, 12" CvTextArgument="[in_krsNumber]" CvType="Text" DesignTimeRectangle="169, 855, 75, 18" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'0000142065'" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='2' tag='A' /&gt;" FuzzySelectorArgument="[&quot;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='A' class='link' aaname='&quot;+in_krsNumber+&quot;' check:innerText='&quot;+in_krsNumber+&quot;' /&gt;&quot;]" Guid="e50e3391-e9b3-4fde-87ba-ac83ca35019b" InformativeScreenshot="f66bc91bc9c7fae620763d91186eabd0.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Wyszukiwarka KRS' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive" WaitForReadyArgument="Complete">
                             <uix:TargetAnchorable.Anchors>
@@ -259,13 +259,13 @@
                     </Sequence>
                   </uix:NCheckState.IfExists>
                   <uix:NCheckState.IfNotExists>
-                    <Sequence DisplayName="Target does not disappear" sap:VirtualizedContainerService.HintSize="450,205" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                    <Sequence DisplayName="Target does not disappear" sap:VirtualizedContainerService.HintSize="450,206" sap2010:WorkflowViewState.IdRef="Sequence_4">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                      <Throw DisplayName="Throw business exception" Exception="[new BusinessRuleException(&quot;Nie istnieje&quot;)]" sap:VirtualizedContainerService.HintSize="388,90" sap2010:WorkflowViewState.IdRef="Throw_1" />
+                      <Throw DisplayName="Throw business exception" Exception="[new BusinessRuleException(&quot;Nie istnieje&quot;)]" sap:VirtualizedContainerService.HintSize="388,91" sap2010:WorkflowViewState.IdRef="Throw_1" />
                     </Sequence>
                   </uix:NCheckState.IfNotExists>
                   <uix:NCheckState.Target>
@@ -273,12 +273,12 @@
                   </uix:NCheckState.Target>
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       <x:Boolean x:Key="IsPinned">False</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
                 </uix:NCheckState>
-                <Sequence DisplayName="Get values" sap:VirtualizedContainerService.HintSize="954,81" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                <Sequence DisplayName="Get values" sap:VirtualizedContainerService.HintSize="954,83" sap2010:WorkflowViewState.IdRef="Sequence_5">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -341,10 +341,10 @@
                     </uix:NGetText.Target>
                   </uix:NGetText>
                 </Sequence>
-                <uix:NGoToUrl DisplayName="Go back to main " sap:VirtualizedContainerService.HintSize="954,82" sap2010:WorkflowViewState.IdRef="NGoToUrl_1" Url="https://prs.ms.gov.pl/" Version="V3" />
-                <uix:NCheckState DisplayName="Check App State 'Krajowy Rejestr'" sap:VirtualizedContainerService.HintSize="954,414" sap2010:WorkflowViewState.IdRef="NCheckState_3" ScopeIdentifier="ba80cf8f-9a60-49fe-ba32-3677daab2dcd" Timeout="20" Version="V3">
+                <uix:NGoToUrl DisplayName="Go back to main " sap:VirtualizedContainerService.HintSize="954,83" sap2010:WorkflowViewState.IdRef="NGoToUrl_1" Url="https://prs.ms.gov.pl/" Version="V3" />
+                <uix:NCheckState DisplayName="Check App State 'Krajowy Rejestr'" sap:VirtualizedContainerService.HintSize="954,417" sap2010:WorkflowViewState.IdRef="NCheckState_3" ScopeIdentifier="ba80cf8f-9a60-49fe-ba32-3677daab2dcd" Timeout="20" Version="V3">
                   <uix:NCheckState.IfExists>
-                    <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,105" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                    <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,106" sap2010:WorkflowViewState.IdRef="Sequence_9">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -353,13 +353,13 @@
                     </Sequence>
                   </uix:NCheckState.IfExists>
                   <uix:NCheckState.IfNotExists>
-                    <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,197" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                    <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,198" sap2010:WorkflowViewState.IdRef="Sequence_10">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                      <uix:NNavigateBrowser Action="Refresh" DisplayName="Navigate Browser - Refresh" sap:VirtualizedContainerService.HintSize="388,82" sap2010:WorkflowViewState.IdRef="NNavigateBrowser_2" Version="V3" />
+                      <uix:NNavigateBrowser Action="Refresh" DisplayName="Navigate Browser - Refresh" sap:VirtualizedContainerService.HintSize="388,83" sap2010:WorkflowViewState.IdRef="NNavigateBrowser_2" Version="V3" />
                     </Sequence>
                   </uix:NCheckState.IfNotExists>
                   <uix:NCheckState.Target>
@@ -375,17 +375,17 @@
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
-              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               <x:Boolean x:Key="IsPinned">False</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
         </uix:NApplicationCard>
       </TryCatch.Try>
       <TryCatch.Catches>
-        <Catch x:TypeArguments="ui:BusinessRuleException" sap:VirtualizedContainerService.HintSize="404,21" sap2010:WorkflowViewState.IdRef="Catch`1_1">
+        <Catch x:TypeArguments="ui:BusinessRuleException" sap:VirtualizedContainerService.HintSize="400,161" sap2010:WorkflowViewState.IdRef="Catch`1_1">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
-              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               <x:Boolean x:Key="IsPinned">False</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
@@ -393,10 +393,10 @@
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="ui:BusinessRuleException" Name="Exception" />
             </ActivityAction.Argument>
-            <Throw DisplayName="Throw exception" Exception="[Exception]" sap:VirtualizedContainerService.HintSize="334,90" sap2010:WorkflowViewState.IdRef="Throw_2" />
+            <Throw DisplayName="Throw exception" Exception="[Exception]" sap:VirtualizedContainerService.HintSize="334,91" sap2010:WorkflowViewState.IdRef="Throw_2" />
           </ActivityAction>
         </Catch>
-        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="404,21" sap2010:WorkflowViewState.IdRef="Catch`1_2">
+        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="400,22" sap2010:WorkflowViewState.IdRef="Catch`1_2">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -407,7 +407,7 @@
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="s:Exception" Name="Exception" />
             </ActivityAction.Argument>
-            <Throw Exception="[Exception]" sap:VirtualizedContainerService.HintSize="334,90" sap2010:WorkflowViewState.IdRef="Throw_3" />
+            <Throw Exception="[Exception]" sap:VirtualizedContainerService.HintSize="334,91" sap2010:WorkflowViewState.IdRef="Throw_3" />
           </ActivityAction>
         </Catch>
       </TryCatch.Catches>

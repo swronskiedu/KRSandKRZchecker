@@ -9,7 +9,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>992,853</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1493,1179</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ProcessTransaction_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="50">
@@ -249,7 +249,7 @@
                     </uix:TargetAnchorable>
                   </uix:NClick.Target>
                 </uix:NClick>
-                <uix:NCheckState DisplayName="Check if exists in database" sap:VirtualizedContainerService.HintSize="954,422" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="ba80cf8f-9a60-49fe-ba32-3677daab2dcd" Timeout="2" Version="V3">
+                <uix:NCheckState DisplayName="Check if exists in database" EnableIfNotExists="False" sap:VirtualizedContainerService.HintSize="954,422" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="ba80cf8f-9a60-49fe-ba32-3677daab2dcd" Timeout="2" Version="V3">
                   <uix:NCheckState.IfExists>
                     <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,205" sap2010:WorkflowViewState.IdRef="Sequence_3">
                       <sap:WorkflowViewStateService.ViewState>
@@ -340,11 +340,7 @@
                                 <If.Then>
                                   <Sequence sap:VirtualizedContainerService.HintSize="552,1020" sap2010:WorkflowViewState.IdRef="Sequence_14">
                                     <Sequence.Variables>
-                                      <Variable x:TypeArguments="x:Boolean" Name="only_row">
-                                        <Variable.Default>
-                                          <Literal x:TypeArguments="x:Boolean" Value="True" />
-                                        </Variable.Default>
-                                      </Variable>
+                                      <Variable x:TypeArguments="x:Boolean" Default="True" Name="only_row" />
                                     </Sequence.Variables>
                                     <sap:WorkflowViewStateService.ViewState>
                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
